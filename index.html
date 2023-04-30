@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="mobile-web-app-capable">
+  <meta content="#000" name="theme-color">
+  <meta content="#000" name="msapplication-TileColor">
+  <meta content="#000" name="apple-mobile-web-app-status-bar-style">
+  <meta content="mansitee.github.io, mansitee, manten, proyek, cantik, keren, banget" name="apple-mobile-web-app-title">
+
+  	
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href = '/Youtube/img/youtube-logo-png-46031.png' type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="manifest" href="./sima.webmanifest">
+    
+<script>
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, function(err) {
+                console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+    }
+      
+  </script>
+
+</head>
+<body>
+
+    <div id="searchDiv">
+        <div id="input">
+            <input type="text" id="query" placeholder="Search">
+            <button id="searchBtn" onclick="search()"><i class="fa fa-search"></i></button>
+        </div>
+        
+    </div>
+    <div id="container"></div>
+    
+</body>
+<script src="main.js"></script>
+</html>
