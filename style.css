@@ -79,7 +79,7 @@
 }
 #container>div{background-color:#fff;
     padding: 5px;
-    cursor: pointer; border-radius:10px; margin:10px; 
+    cursor: pointer; border-radius:10px; tmargin:10px; 
 }
 
 #container>tdiv{background-image:url(bg2.png);background-size:100% 100%;color:#fff;text-align:center;
